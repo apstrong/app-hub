@@ -2,14 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Streamlit Apps Hub</title>
+  <title>My Streamlit Apps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #4f46e5;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h2 {
+      font-size: 1.25rem;
+      margin: 0 0 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .card a {
+      text-decoration: none;
+      color: #4f46e5;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      padding: 1rem;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to My Streamlit Apps!</h1>
-  <ul>
-    <li><a href="https://your-streamlit-app-1.streamlit.app" target="_blank">App 1: Data Explorer</a></li>
-    <li><a href="https://your-streamlit-app-2.streamlit.app" target="_blank">App 2: Sales Dashboard</a></li>
-    <li><a href="https://your-streamlit-app-3.streamlit.app" target="_blank">App 3: Forecasting Tool</a></li>
-  </ul>
+
+<header>
+  <h1>🚀 My Streamlit App Hub</h1>
+  <p>Explore interactive apps built with Streamlit</p>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h2>Data Explorer</h2>
+    <p>Interactive tool to explore datasets with filters and charts.</p>
+    <a href="https://your-app-1.streamlit.app" target="_blank">Launch App →</a>
+  </div>
+  <div class="card">
+    <h2>Sales Dashboard</h2>
+    <p>Track revenue, conversions, and performance over time.</p>
+    <a href="https://your-app-2.streamlit.app" target="_blank">Launch App →</a>
+  </div>
+  <div class="card">
+    <h2>Forecasting Tool</h2>
+    <p>Generate forecasts using time series models and visualization.</p>
+    <a href="https://your-app-3.streamlit.app" target="_blank">Launch App →</a>
+  </div>
+</div>
+
+<footer>
+  Built with ❤️ using GitHub Pages & Streamlit
+</footer>
+
 </body>
 </html>
